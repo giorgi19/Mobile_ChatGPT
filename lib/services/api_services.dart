@@ -11,7 +11,7 @@ class ApiService {
   static Future<List<ModelsModel>> getModels() async {
     try {
       var response = await http.get(
-        Uri.parse("$BASE_URL/models"),
+        Uri.parse("$baseUrl/models"),
         headers: {'Authorization': 'Bearer ${Env.apiKey}'},
       );
       Map jsonResponse = jsonDecode(response.body);
@@ -35,7 +35,7 @@ class ApiService {
     try {
       log("modelId $modelId");
       var response = await http.post(
-        Uri.parse("$BASE_URL/completions"),
+        Uri.parse("$baseUrl/completions"),
         headers: {'Authorization': 'Bearer ${Env.apiKey}', "Content-Type": "application/json"},
         body: jsonEncode(
           {

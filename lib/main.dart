@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_chatgpt/generated/generated.dart';
 
 void main() {
   runApp(MaterialApp(
-    title: 'Mobile ChatGpt',
+    title: 'Mobile ChatGPt',
     theme: ThemeData(
       primarySwatch: Colors.blue,
     ),
@@ -19,7 +20,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Title'),
       ),
-      body: const SizedBox(),
+      body: SizedBox(child: Assets.images.aboutIcon.svg()),
     );
   }
 }
