@@ -1,4 +1,4 @@
-import 'package:mobile_chatgpt/clients/authentication_user/models/authentication_client.dart';
+import 'package:mobile_chatgpt/api/clients/authentication_user/models/authentication_client.dart';
 
 /// A generic Authentication Client Interface.
 abstract class AuthenticationClient {

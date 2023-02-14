@@ -1,5 +1,5 @@
-import 'package:mobile_chatgpt/clients/authentication_user/authentication_client.dart';
-import 'package:mobile_chatgpt/clients/authentication_user/models/authentication_client.dart';
+import 'package:mobile_chatgpt/api/api.dart';
+import 'package:mobile_chatgpt/api/clients/authentication_user/models/authentication_client.dart';
 
 class UserRepository {
   UserRepository({required AuthenticationClient authenticationClient})
